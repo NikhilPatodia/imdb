@@ -5,8 +5,9 @@ const MenuItem = ({title, address, Icon}) => {
   return (
     <div className=' flex '>
         <div className='hover:text-amber-600'>
+          <Link href={address}>
           <Icon className="sm:hidden text-xl"/>
-          <Link className='hidden sm:inline text-xl' href={address}>{title}</Link>
+          <span className='hidden sm:inline text-xl' >{title}</span></Link>
         </div>
         
     </div>
